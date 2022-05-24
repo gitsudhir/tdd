@@ -15,3 +15,6 @@ test('a negative number will throw an exception "negatives not allowed"', () => 
 test('The method can take up to two numbers', () => {
 	expect(sum("1,2,3")).toBe('The method can take up to two numbers');
 });
+test('string  "1\n2,3" it will return 6', () => {
+	expect(sum("1\n2,3")).toBe(6);
+});
