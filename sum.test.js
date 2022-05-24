@@ -18,3 +18,6 @@ test('The method can take up to two numbers', () => {
 test('string  "1\n2,3" it will return 6', () => {
 	expect(sum("1\n2,3")).toBe(6);
 });
+test('string  "1,\n" it will return "not ok"', () => {
+	expect(sum("1,\n")).toBe('not ok');
+});
